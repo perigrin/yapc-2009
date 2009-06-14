@@ -2,12 +2,24 @@
 
 @font-face {
 		font-family: Title;
-	src: local("Goudy Old Style");
+	src: url(typeface/Fontin-SmallCaps.ttf);
 }
 
 @font-face {	
 	font-family: Text;
-	src:local("Goudy Old Style");
+	src: url(typeface/Fontin-Regular.ttf);
+}                               
+
+@font-face {	
+	font-family: Text;
+	src: url(typeface/Fontin-Bold.ttf);
+	font-weight: bold;
+}                               
+
+@font-face {
+	font-family: Text;
+	src: url(typeface/Fontin-Italic.ttf);
+	font-style: italic;
 }
 
 @font-face {
@@ -18,7 +30,7 @@
 body {
 	background: #000 -16px 0 no-repeat; 
 	color: white; 
-	font-size: 2.25em;
+	font-size: 24pt;
 	font-family: Text;
 }
 :link, :visited {text-decoration: none; color: #000;}
@@ -27,8 +39,8 @@ body {
 h1, h2, h3, h4 { font-size: 100%; font-family: Title; margin: 0; padding: 0; font-weight: inherit;}
 ul, pre {margin: 0; line-height: 1em;}
 html, body {margin: 0; padding: 0;}
-
-blockquote, q {font-style: italic;}
+            
+blockquote, q {font-style: italic}
 blockquote {padding: 0 2em 0.5em; margin: 0 1.5em 0.5em; text-align: center; font-size: 1em;}
 blockquote p {margin: 0;}
 blockquote i {font-style: normal;}
@@ -57,15 +69,12 @@ div#footer {font-size: 0.5em; font-weight: bold; padding: 1em 0;}
 
 div.long {font-size: 0.75em;}
 .slide h1 {
-	position: absolute; 
-	top: 0.7em; 
-	left: 87px; 
-	z-index: 1;
-  	margin: 0; 
-	padding: 0.3em 0 0 50px; 
+margin: 0;
+margin-top: -1em;
+margin-left: 87px; 
 	white-space: nowrap;
   	font-weight: bold;
-	font-size: 1.5em; 
+	font-size: 48pt; 
 	text-transform: capitalize;
   	color: white; 
 	background: transparent;
