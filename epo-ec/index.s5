@@ -182,12 +182,20 @@ charnames 1.06 constant 1.13 diagnostics 1.17 encoding 2.06 encoding::warnings
 1.04 sort 2.01 strict 1.04 subs 1.00 threads 1.67 threads::shared 1.14 utf8
 1.07 vars 1.01 version 0.74 vmsish 1.02 warnings 1.06 warnings::register 1.01
 </blockquote>
-
+                                      
 ✂------✂------✂------✂------✂------✂------✂------✂------✂------✂------
-
 
 The CPAN
 ========
+
+![Dists Released Per Year](img/dists_released_per_year.png)
+
+✂------✂------✂------✂------✂------✂------✂------✂------✂------✂------
+
+The CPAN
+========
+
+<img src="img/dists_released_per_year.png" style="float: left; margin-right: 2em"/>
 
 * 3,785 Dists *last year*
 * 3,137 Dists *this year*  so far
