@@ -61,13 +61,94 @@ img#me05 {top: 43px;left: 36px;}
 
 
 <div class="slide">
-<h1>Heading</h1>
+<h1>Who Am I?</h1>
 
 <ul>
-<li>Point one</li>
-<li>Text <code>some code</code> more text
-<pre><code class="bad">Some Bad Code</code></pre></li>
-<li>Point four</li>
+<li>Perl Developer</li>
+<li>Moose Developer</li>
+<li>Closet XML Lover</li>
+</ul>
+
+
+</div>
+
+<div class="slide">
+<h1>The Backstory</h1>
+
+<ul>
+<li>Customer had an Flash site</li>
+<li>Flash was controlled by XML</li>
+<li>&#8220;Build us a CMS for our XML!&#8221;</li>
+</ul>
+
+
+</div>
+
+<div class="slide">
+<h1>The Backstory (cont.)</h1>
+
+<ul>
+<li>Aha! I can whip out my XML Knowledge!
+<ul>
+<li>This was naughty, I didn&#8217;t check CPAN</li>
+<li><code>XML::Compile</code></li>
+<li><code>XML::Pastor</code></li>
+</ul></li>
+<li>Not all bad, my wheel is round in a different way</li>
+<li>I&#8217;ll get to this later</li>
+</ul>
+
+
+</div>
+
+<div class="slide">
+<h1>The Backstory (cont.)</h1>
+
+<ul>
+<li>Me: Send me the DTD or Schema, this is cake!</li>
+<li>Them: &#8230; what&#8217;s a DTD?</li>
+<li>Me: Well send me your XML, if it&#8217;s well formed I can deal with that too</li>
+<li>Them: &#8230; Well formed?</li>
+<li>Me: &#8230; [redacted]</li>
+</ul>
+
+
+</div>
+
+<div class="slide">
+<h1>The Backstory (cont.)</h1>
+
+<ul>
+<li>After much hassleling between Stevan and them
+<ul>
+<li>And me and stevan</li>
+</ul></li>
+<li>XML::Toolkit was born</li>
+</ul>
+
+
+</div>
+
+<div class="slide">
+<h1>The Requirements</h1>
+
+<ul>
+<li>Had to Round Trip existing documents</li>
+<li>Elements in the same order because they weren&#8217;t using XPath</li>
+<li>Had to infer the schema from existing documents</li>
+<li>Had to be able to generate <em>new</em> documents that fit the above</li>
+</ul>
+
+
+</div>
+
+<div class="slide">
+<h1>The Architecture</h1>
+
+<ul>
+<li>SAX -> Moose Class Creation</li>
+<li>SAX -> Moose Class Population</li>
+<li>SAX -> Moose Class Serialization</li>
 </ul>
 
 

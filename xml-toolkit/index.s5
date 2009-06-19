@@ -4,10 +4,73 @@ Presenter:    Chris Prather
 Organization: HD Publishing Group
 Date:         June 23, 2009
 
-Heading
-=======
+✂------✂------✂------✂------✂------✂------✂------✂------✂------✂------
 
-* Point one
-* Text `some code` more text
-	<pre><code class="bad">Some Bad Code</code></pre>
-* Point four
+Who Am I?
+=========
+
+* Perl Developer
+* Moose Developer
+* Closet XML Lover
+
+✂------✂------✂------✂------✂------✂------✂------✂------✂------✂------
+
+The Backstory
+=============
+
+* Customer had an Flash site
+* Flash was controlled by XML
+* "Build us a CMS for our XML!"
+
+✂------✂------✂------✂------✂------✂------✂------✂------✂------✂------
+
+The Backstory (cont.)
+=====================
+
+* Aha! I can whip out my XML Knowledge!
+    * This was naughty, I didn't check CPAN
+    * `XML::Compile`
+    * `XML::Pastor`
+* Not all bad
+    * my wheel is round in a different way
+* I'll get to this later
+
+✂------✂------✂------✂------✂------✂------✂------✂------✂------✂------
+
+The Backstory (cont.)
+=====================
+
+* Me: Send me the DTD or Schema, this is cake!
+* Them: ... what's a DTD?
+* Me: Well send me your XML, if it's well formed I can deal with that too
+* Them: ... Well formed?
+* Me: ... [redacted]
+
+✂------✂------✂------✂------✂------✂------✂------✂------✂------✂------
+
+The Backstory (cont.)
+=====================
+
+* After much hassleling between Stevan and them
+    * And me and stevan
+* XML::Toolkit was born
+
+✂------✂------✂------✂------✂------✂------✂------✂------✂------✂------
+
+The Requirements
+================
+
+* Had to Round Trip existing documents
+* Elements in the same order because they weren't using XPath
+* Had to infer the schema from existing documents
+* Had to be able to generate *new* documents that fit the above
+
+✂------✂------✂------✂------✂------✂------✂------✂------✂------✂------
+
+The Architecture
+================
+
+* SAX -> Moose Class Creation
+* SAX -> Moose Class Population
+* SAX -> Moose Class Serialization
+
