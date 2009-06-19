@@ -70,7 +70,9 @@ The Requirements
 The Architecture
 ================
 
-* SAX -> Moose Class Creation
-* SAX -> Moose Class Population
-* SAX -> Moose Class Serialization
+* SAX -> Moose Class 
+* SAX -> Moose Object
+* SAX -> XML
+
+✂------✂------✂------✂------✂------✂------✂------✂------✂------✂------
 
