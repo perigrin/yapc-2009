@@ -2,22 +2,18 @@
 
 @font-face {
 		font-family: Title;
-	src: local("Goudy Bookletter 1911");
-}
-
-@font-face {	
-	font-family: Text;
-	src:local("Goudy Bookletter 1911");
+	src: url(typeface/Goudy_Bookletter_1911_by_chemoelectric.otf);
 }
 
 @font-face {
 	font-family: Code;
 	src: local("Inconsolata");
 }
+
 body {
 	background: #000 -16px 0 no-repeat; 
 	color: white; 
-	font-size: 2.25em;
+	font-size: 24pt;
 	font-family: Text;
 }
 :link, :visited {text-decoration: none; color: #000;}
@@ -26,8 +22,8 @@ body {
 h1, h2, h3, h4 { font-size: 100%; font-family: Title; margin: 0; padding: 0; font-weight: inherit;}
 ul, pre {margin: 0; line-height: 1em;}
 html, body {margin: 0; padding: 0;}
-
-blockquote, q {font-style: italic;}
+            
+blockquote, q {font-style: italic}
 blockquote {padding: 0 2em 0.5em; margin: 0 1.5em 0.5em; text-align: center; font-size: 1em;}
 blockquote p {margin: 0;}
 blockquote i {font-style: normal;}
@@ -42,7 +38,7 @@ sup {font-size: smaller; line-height: 1px;}
 .slide code.old {color: grey;}
 .slide pre {padding: 0; margin: 0.25em 0 0.5em 0.5em; color: #533; font-size: 90%;}
 .slide pre code {display: block;}
-.slide ul {margin-left: 5%; margin-right: 7%; list-style: disc;}
+.slide ul {margin-left: 5%; margin-right: 7%; list-style: none;}
 .slide li {margin-top: 0.75em; margin-right: 0;}
 .slide ul ul {line-height: 1;}
 .slide ul ul li {margin: .2em; font-size: 85%; list-style: square;}
@@ -56,23 +52,23 @@ div#footer {font-size: 0.5em; font-weight: bold; padding: 1em 0;}
 
 div.long {font-size: 0.75em;}
 .slide h1 {
-	position: absolute; 
-	top: 0.7em; 
-	left: 87px; 
-	z-index: 1;
-  	margin: 0; 
-	padding: 0.3em 0 0 50px; 
+margin: 0;
+margin-top: -1em;
+margin-left: 87px; 
 	white-space: nowrap;
   	font-weight: bold;
-	font-size: 1.5em; 
+	font-size: 48pt; 
 	text-transform: capitalize;
   	color: white; 
 	background: transparent;
+}                                   
+.slide h2 {            
+  	margin-left: 87px; 
 }
 .slide h3 {font-size: 130%;}
 h1 abbr {font-variant: small-caps;}
 
-div#controls { position: absolute; left: 60%; bottom: 0;
+div#controls {display: none; position: absolute; left: 60%; bottom: 0;
   width: 40%;
   text-align: right; font: bold 0.9em;}
 html>body div#controls {position: fixed; padding: 0; top: auto;}
@@ -107,9 +103,8 @@ ul.urls {list-style: none; display: inline; margin: 0;}
 html>body .external {border-bottom: none;}
 .external:after {content: " \274F"; font-size: smaller; color: #77B;}
 
-.incremental, .incremental *, .incremental *:after {color: #DDE; visibility: visible;}
-img.incremental {visibility: hidden;}
-.slide .current {color: #B02;}
+.incremental, .incremental *, .incremental *:after {visibility: hidden;}
+.slide .current {visibility: visible;}  
 
 
 /* diagnostics
