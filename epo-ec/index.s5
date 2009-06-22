@@ -222,11 +222,8 @@ What is the Good Stuff?
 
 ✂------✂------✂------✂------✂------✂------✂------✂------✂------✂------
 
-What is the Good Stuff?
-=======================
-
 The E.P.O Extended Core
------------------------
+=======================
 
 * Best of Breed for specific domains
 * Reccomended by Top Perl Companies 
@@ -235,12 +232,9 @@ The E.P.O Extended Core
 
 ✂------✂------✂------✂------✂------✂------✂------✂------✂------✂------
 
-What is the Good Stuff?
+The E.P.O Extended Core
 =======================
 
-The E.P.O Extended Core
------------------------
-                                                  
 * Doesn't Exist Yet.
 * I suck.
 * But `Task::Kensho` does!
@@ -250,14 +244,75 @@ The E.P.O Extended Core
 `Task::Kensho`
 ==============
 
-blah blah blah
+* Written to stop Matt Trout's whinging
+* Broken out into (optional) Categories
+* Reccomendations for Modules for a specific type of Perl Company
+
+✂------✂------✂------✂------✂------✂------✂------✂------✂------✂------
+
+`Task::Kensho`
+==============
+
+* Basic Toolchain
+* Testing 
+* Module Development
+* OOP
+* RDBMS Dev
+* Async Programming
+* Web Development
+* Web Crawling
+* DateTime
+* ... 
+
+✂------✂------✂------✂------✂------✂------✂------✂------✂------✂------
+
+`Task::Kensho`
+==============
+
+* Best of Breed Modules
+	* Or at least what I consider Best of Breed
+		* But I want to change that
+* `Moose`, `DBIx::Class`, `Module::Install`, `Catalyst`, ... 
+	* All the usual suspects
 
 ✂------✂------✂------✂------✂------✂------✂------✂------✂------✂------
 
 So What Now?
 ============
 
-fi
+* I need Help
+	* People to vet the system
+	* Volunteers to shore up the edges 
+	* People to champion the Extended Core with companies
+
+✂------✂------✂------✂------✂------✂------✂------✂------✂------✂------
+
+Advisors
+========
+       
+* Do you Run a Perl Shop?
+* Do you (want to) use Modern Perl?
+* Talk to me.
+
+✂------✂------✂------✂------✂------✂------✂------✂------✂------✂------
+
+Volunteers
+==========
+
+* Software Sucks.
+	* Documentation
+	* Bugs
+	* Missing Features
+* Somone needs to fix these
+
+✂------✂------✂------✂------✂------✂------✂------✂------✂------✂------
+
+Champions
+=========
+
+* Convince your company to let you be paid to be one of two 
+* Convince them to use The EPO-EC ... or `Task::Kensho`.
+* Convince them to talk to me about why they can't
 
 ✂------✂------✂------✂------✂------✂------✂------✂------✂------✂------
 
@@ -265,7 +320,8 @@ Colophon
 =======
 
 * Titling: Fontin Small Caps 48pt
-* Body: Fontin 24pAAt
+* Body: Fontin @ 24pt
 * Code: `Inconsolata 24pt`
 * Charts: Chart::Clicker (gphat++)
+	* Labels: Gentium
 * Presentation: Markdown + S5
