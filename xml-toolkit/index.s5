@@ -3,6 +3,7 @@ Location:     YAPC • 10 • Pittsburgh PA
 Presenter:    Chris Prather
 Organization: HD Publishing Group
 Date:         June 23, 2009
+Controls: 	  Hidden
 
 ✂------✂------✂------✂------✂------✂------✂------✂------✂------✂------
 
@@ -70,9 +71,73 @@ The Requirements
 The Architecture
 ================
 
-* SAX -> Moose Class 
-* SAX -> Moose Object
-* SAX -> XML
+* SAX
+	* SAX &#x27A2; Moose Class 
+	* SAX &#x27A2; Moose Object
+	* Moose &#x27A2; XML (via SAX)
 
 ✂------✂------✂------✂------✂------✂------✂------✂------✂------✂------
 
+SAX &#x27A2; Moose Class 
+=========================
+
+* `xmltk generate --input [XML]`
+* Parse XML
+	* For every Element generate a class
+	* Attributes
+	* Children become a collection
+
+✂------✂------✂------✂------✂------✂------✂------✂------✂------✂------
+
+SAX &#x27A2; Moose Class 
+=========================
+
+* Won't work properly with mixed elements
+* Doesn't accurately reflect the *real* schema
+	* "Only One Child"
+	* One or Many
+	* Data Types
+* Works pretty damn well for an 80%
+
+✂------✂------✂------✂------✂------✂------✂------✂------✂------✂------
+
+SAX &#x27A2; Moose Object
+=========================
+
+* `xmltk validate --input [XML]`
+* Parse XML
+	* For every Element create an object
+	* populate Attributes
+	* Push children into collections
+                            
+✂------✂------✂------✂------✂------✂------✂------✂------✂------✂------
+
+Moose &#x27A2; XML (via SAX)
+============================
+
+* `xmltk validate --input [XML]`
+* Parse Moose Objects in memory
+	* For every object fire `start_element`
+	* for every text attribute fire `characters`
+	* Let `XML::SAX::Writer` do the real work
+
+✂------✂------✂------✂------✂------✂------✂------✂------✂------✂------
+                         
+What's Next
+===========
+
+* Finish Namespace Support
+	* Serialization
+* DTD / RelaxNG support
+* Performance enhancements
+* `Class::XML` rewrite
+
+✂------✂------✂------✂------✂------✂------✂------✂------✂------✂------
+
+Colophon
+=======
+
+* Titling: Goudy Bookletter @ 1911 48pt
+* Body: Goudy Bookletter 1911 @ 24pt
+* Code: `Inconsolata @ 24pt`
+* Presentation: Markdown + S5

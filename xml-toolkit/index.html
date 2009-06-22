@@ -15,7 +15,7 @@
 <meta name="company" content="HD Publishing Group" />
 <!-- configuration parameters -->
 <meta name="defaultView" content="slideshow" />
-<meta name="controlVis" content="visible" />
+<meta name="controlVis" content="	  Hidden" />
 <!-- style sheet links -->
 <link rel="stylesheet" href="./ui/default/slides.css" type="text/css" media="projection" id="slideProj" />
 <link rel="stylesheet" href="./ui/default/outline.css" type="text/css" media="screen" id="outlineStyle" />
@@ -149,9 +149,106 @@ img#me05 {top: 43px;left: 36px;}
 <h1>The Architecture</h1>
 
 <ul>
-<li>SAX -> Moose Class </li>
-<li>SAX -> Moose Object</li>
-<li>SAX -> XML</li>
+<li>SAX
+<ul>
+<li>SAX &#x27A2; Moose Class </li>
+<li>SAX &#x27A2; Moose Object</li>
+<li>Moose &#x27A2; XML (via SAX)</li>
+</ul></li>
+</ul>
+
+
+</div>
+
+<div class="slide">
+<h1>SAX &#x27A2; Moose Class </h1>
+
+<ul>
+<li><code>xmltk generate --input [XML]</code></li>
+<li>Parse XML
+<ul>
+<li>For every Element generate a class</li>
+<li>Attributes</li>
+<li>Children become a collection</li>
+</ul></li>
+</ul>
+
+
+</div>
+
+<div class="slide">
+<h1>SAX &#x27A2; Moose Class </h1>
+
+<ul>
+<li>Won&#8217;t work properly with mixed elements</li>
+<li>Doesn&#8217;t accurately reflect the <em>real</em> schema
+<ul>
+<li>&#8220;Only One Child&#8221;</li>
+<li>One or Many</li>
+<li>Data Types</li>
+</ul></li>
+<li>Works pretty damn well for an 80%</li>
+</ul>
+
+
+</div>
+
+<div class="slide">
+<h1>SAX &#x27A2; Moose Object</h1>
+
+<ul>
+<li><code>xmltk validate --input [XML]</code></li>
+<li>Parse XML
+<ul>
+<li>For every Element create an object</li>
+<li>populate Attributes</li>
+<li>Push children into collections</li>
+</ul></li>
+</ul>
+
+
+</div>
+
+<div class="slide">
+<h1>Moose &#x27A2; XML (via SAX)</h1>
+
+<ul>
+<li><code>xmltk validate --input [XML]</code></li>
+<li>Parse Moose Objects in memory
+<ul>
+<li>For every object fire <code>start_element</code></li>
+<li>for every text attribute fire <code>characters</code></li>
+<li>Let <code>XML::SAX::Writer</code> do the real work</li>
+</ul></li>
+</ul>
+
+
+</div>
+
+<div class="slide">
+<h1>What&#8217;s Next</h1>
+
+<ul>
+<li>Finish Namespace Support
+<ul>
+<li>Serialization</li>
+</ul></li>
+<li>DTD / RelaxNG support</li>
+<li>Performance enhancements</li>
+<li><code>Class::XML</code> rewrite</li>
+</ul>
+
+
+</div>
+
+<div class="slide">
+<h1>Colophon</h1>
+
+<ul>
+<li>Titling: Goudy Bookletter @ 1911 48pt</li>
+<li>Body: Goudy Bookletter 1911 @ 24pt</li>
+<li>Code: <code>Inconsolata @ 24pt</code></li>
+<li>Presentation: Markdown + S5</li>
 </ul>
 
 
