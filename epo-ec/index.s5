@@ -182,6 +182,16 @@ charnames 1.06 constant 1.13 diagnostics 1.17 encoding 2.06 encoding::warnings
 1.04 sort 2.01 strict 1.04 subs 1.00 threads 1.67 threads::shared 1.14 utf8
 1.07 vars 1.01 version 0.74 vmsish 1.02 warnings 1.06 warnings::register 1.01
 </blockquote>
+
+✂------✂------✂------✂------✂------✂------✂------✂------✂------✂------
+
+The Perl Core
+=============
+
+* Nobody really uses all of these
+	* Except when we do
+* The things we do use aren't always in here
+	* So where are they?
                                       
 ✂------✂------✂------✂------✂------✂------✂------✂------✂------✂------
 
@@ -225,9 +235,10 @@ What is the Good Stuff?
 The E.P.O Extended Core
 =======================
 
-* Best of Breed for specific domains
-* Reccomended by Top Perl Companies 
-	* (BestPractical, Shadowcat, Infinity Interactive)
+* Inferred Standard
+* What do specific Perl Companies Do?
+	* (BestPractical, Shadowcat, Infinity Interactive, ...)
+* Hopefully Best of Breed Modules	
 * Sponsored by the Enlightned Perl Organisation
 
 ✂------✂------✂------✂------✂------✂------✂------✂------✂------✂------
@@ -246,7 +257,8 @@ The E.P.O Extended Core
 
 * Written to stop Matt Trout's whinging
 * Broken out into (optional) Categories
-* Reccomendations for Modules for a specific type of Perl Company
+* Recommendations for Modules for a specific type of Perl Company
+* With a crappy name
 
 ✂------✂------✂------✂------✂------✂------✂------✂------✂------✂------
 
@@ -274,6 +286,7 @@ The E.P.O Extended Core
 		* But I want to change that
 * `Moose`, `DBIx::Class`, `Module::Install`, `Catalyst`, ... 
 	* All the usual suspects
+	* Look on CPAN for the full list
 
 ✂------✂------✂------✂------✂------✂------✂------✂------✂------✂------
 
